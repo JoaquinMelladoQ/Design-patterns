@@ -17,3 +17,7 @@
 + Now you can see your function... not only that
 ![image info](./assets/proto-c3.png)
 
++ Building our first example: 
++ It'll extends thu class
+![image info](./assets/first-example-proto-constructor.png)
+
