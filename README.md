@@ -24,3 +24,8 @@
 + Building second example:
 ![image info](./assets/second-example-proto-constructor.png)
 At this point, we clearly see that String is inheriting from Object class. Here the regular expression was added to erase space at the beginning and the end, in the case if .trim does not run at the browser, because is not supported in some versions.
+
+## Module
++ It's base on literal JavaScript's objects. In other words, every time you define a literal object in JavaScript you'll be defining a module; which could contain properties and at the same time, this properties could contain objects and methods as well:
+![image info](./assets/module.png)
++ In this example you can also ask for the state of 'modulo'
