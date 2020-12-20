@@ -18,9 +18,9 @@
 ![image info](./assets/proto-c3.png)
 
 + Building our first example: 
-+ It'll extends Object's class. This class will be added to all objects that we eventually create with JS. In this case log method was added to prototype and that'll be equal to a function (do NOT use fat arrow function). 'This' at the console references to Object. X being our new object.
++ This class will be added to all objects that we eventually create with JS, it'll extends Object's class. In this case log method was added to prototype and that'll be equal to a function (do NOT use fat arrow function here). 'This' at the console references to Object. X being our new object.
 ![image info](./assets/first-example-proto-constructor.png)
 
 + Building second example:
 ![image info](./assets/second-example-proto-constructor.png)
-In this case, we clearly see that String is inheriting from Object class. Regular expression was added to erase space at the beginning and the end in case if .trim does not run at the browser
+At this point, we clearly see that String is inheriting from Object class. Here the regular expression was added to erase space at the beginning and the end, in the case if .trim does not run at the browser, because is not supported in some versions.
