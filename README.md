@@ -22,4 +22,5 @@
 ![image info](./assets/first-example-proto-constructor.png)
 
 + Building second example:
-
+![image info](./assets/second-example-proto-constructor.png)
+In this case, we clearly see that String is inheriting from Object class. Regular expression was added to erase space at the beginning and the end in case if .trim does not run at the browser

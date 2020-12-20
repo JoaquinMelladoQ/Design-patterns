@@ -37,3 +37,5 @@ if (!String.prototype.trim) {
 
 const y = "    lala     ".trim()
 y.log()
+
+// Inheritance from Object class
