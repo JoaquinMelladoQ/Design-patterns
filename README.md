@@ -18,6 +18,8 @@
 ![image info](./assets/proto-c3.png)
 
 + Building our first example: 
-+ It'll extends thu class
++ It'll extends Object's class. This class will be added to all objects that we eventually create with JS. In this case log method was added to prototype and that'll be equal to a function (do NOT use fat arrow function). 'This' at the console references to Object. X being our new object.
 ![image info](./assets/first-example-proto-constructor.png)
+
++ Building second example:
 

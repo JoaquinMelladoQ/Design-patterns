@@ -22,3 +22,18 @@ Object.prototype.log = function () {
 
 const x = { a: 1 }
 x.log()
+
+// 2 - Building trim, replacing all spaces at the beginning and the end as well
+
+if (!String.prototype.trim) {
+    String.prototype.trim = function() {
+        try {
+            return this.replace(/^\s+|\s+$/g, "")
+        } catch (e) {
+            return this
+        }
+    }
+}
+
+const y = "    lala     ".trim()
+y.log()
