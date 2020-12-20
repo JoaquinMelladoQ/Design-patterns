@@ -12,3 +12,13 @@ class MiClase {
 const instancia = new MiClase(4, 2)
 console.log(instancia)
 //you will not be able to visualize the prototype with this code, unless you try to reach it from the web browser
+
+// Examples
+// 1 - Extend objects
+
+Object.prototype.log = function () {
+    console.log(this);
+}
+
+const x = { a: 1 }
+x.log()
