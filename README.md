@@ -26,7 +26,7 @@
 At this point, we clearly see that String is inheriting from Object class. Here the regular expression was added to erase space at the beginning and the end, in the case if .trim does not run at the browser, because is not supported in some versions.
 
 ## Module
-+ It's base on literal JavaScript's objects. In other words, every time you define a literal object in JavaScript you'll be defining a module; which could contain properties and at the same time, this properties could contain objects and methods as well:
++ It's based on literal JavaScript's objects. In other words, every time you define a literal object in JavaScript you'll be defining a module; which could contain properties and at the same time, this properties could contain objects and methods as well:
 ![image info](./assets/module.png)
 + In this example you can also ask for the state of 'modulo'
 
@@ -39,3 +39,13 @@ At this point, we clearly see that String is inheriting from Object class. Here 
 ![image info](./assets/ex-rev-mod.png)
 THIS code won't work unless we copy and paste it at the browser:
 ![image info](./assets/rev-mod-ex-final.png)
+
+## Prototype
+
++ The prototype-pattern it's based on the fact that we can take an object, that is already defined, and add a new prototype based on that fact. These new prototypes are generated for other objects, eliminating duplication of code.
++ An example:
+![image info](./assets/proto-console.png)
++ IMPORTANT: you can't use fat arrow function here because it hasn't context of 'this.'. Also, you have to use 'Object.create', which will create a new object out of nowhere BUT the argument that its provided will be the prototype as is shown above.
++ 'console.log(kiltro)' returns an empty object because properties and methods are storage inside the prototype.
++ The main value of this is that you can replace properties and methods(not included) as is shown:
+![image info](./assets/proto-props.png)
