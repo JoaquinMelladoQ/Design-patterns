@@ -33,4 +33,5 @@ At this point, we clearly see that String is inheriting from Object class. Here 
 ## Revealing module
 + The main difference with Module is that Revealing Module contains a public and private API. The benefit of this is that you can avoid classical syntax and replacing it for a function to create a module. Also you can use IIFE.
 ![image info](./assets/revealing-module.png)
-+ The example above contains an IIFE, inside of it we define private constants and we will return things that we provide for x developer to read properly. As shown above we can provide a new property 'queso' and its value 'cabra'. Nonetheless, you won't be able to access to the const x because only methods could have an access to this private API. In this case will be 'a' or 'b' or whatever that is return. You can also use the public API to modify the private API.
++ The example above contains an IIFE, inside of it we define private constants and we will return things that we provide for x developer to read properly. 
++ As shown above we can provide a new property 'queso' and its value 'cabra'. Nonetheless, you won't be able to access to the const x because only methods could have an access to this private API. In this case will be 'a' or 'b' or whatever that is return. You can also use the public API to modify the private API.
