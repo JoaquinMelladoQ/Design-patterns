@@ -51,7 +51,7 @@ THIS code won't work unless we copy and paste it at the browser:
 ![image info](./assets/proto-props.png)
 
 ## Closures
-+ Even though they are not a pattern it is necessary add some comments on it:
++ Even though they are not patterns it is strictly necessary to add some comments on it:
 ![image info](./assets/closure-one.png)
 + First thing that must call our attention is the scope. The lexical function's scope are of two types; which are private and global. Private is what it's surrounded by { }. Global scope would be what is outside the { } independently which side is it.  
 + So, why do we get this error? :
