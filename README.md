@@ -53,4 +53,10 @@ THIS code won't work unless we copy and paste it at the browser:
 ## Closures
 + Even though they are not a pattern it is necessary add some comments on it:
 ![image info](./assets/closure-one.png)
-+ First thing that must call our attention is the scope.
++ First thing that must call our attention is the scope. The lexical function's scope are of two types; which are private and global. Private is what it's surrounded by { }. Global scope would be what is outside the { } independently which side is it.  
++ So, why do we get this error? :
+![image info](./assets/closure-one-failed.png)
+The error occurs because it out it's scope, when you call 'y' this resides at the global scope. You won't be able to react it from it.
++ In the following example we'll be able to access all constants, but why?
+![image info](./assets/closure-one-success.png)
+Constant 'f' couldn't react constant 'z' but when we call it again with () we do have an access...
