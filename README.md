@@ -62,3 +62,5 @@ The error occurs because it out it's scope, when you call 'y' this resides at th
 Constant 'f' couldn't react constant 'z' but when we call it again with () we do have an access...
 + Here the second function could take the values of the first function and add some logic to it.
 ![image info](./assets/closure-two-1.png)
++ Here's a little example with mongoose using same principles
+![image info](./assets/closure-3.png)
