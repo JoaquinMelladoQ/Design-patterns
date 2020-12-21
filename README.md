@@ -61,4 +61,5 @@ The error occurs because it out it's scope, when you call 'y' this resides at th
 ![image info](./assets/closure-one-success.png)
 Constant 'f' couldn't react constant 'z' but when we call it again with () we do have an access...
 + Here the second function could take the values of the first function and add some logic to it. This is why it's very useful:
+
 ![image info](./assets/closure-two-1.png)
