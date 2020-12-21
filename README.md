@@ -42,10 +42,15 @@ THIS code won't work unless we copy and paste it at the browser:
 
 ## Prototype
 
-+ The prototype-pattern it's based on the fact that we can take an object, that is already defined, and add a new prototype based on that fact. These new prototypes are generated for other objects, eliminating duplication of code.
++ The prototype-pattern it's based on the fact that we can take an object, that is already defined, and add a new prototype based on that fact. These new prototypes are generated for another object, eliminating duplication of code.
 + An example:
 ![image info](./assets/proto-console.png)
 + IMPORTANT: you can't use fat arrow function here because it hasn't context of 'this.'. Also, you have to use 'Object.create', which will create a new object out of nowhere BUT the argument that its provided will be the prototype as is shown above.
 + 'console.log(kiltro)' returns an empty object because properties and methods are storage inside the prototype.
 + The main value of this is that you can replace properties and methods(not included) as is shown:
 ![image info](./assets/proto-props.png)
+
+## Closures
++ Even though they are not a pattern it is necessary add some comments on it:
+![image info](./assets/closure-one.png)
++ First thing that must call our attention is the scope.
