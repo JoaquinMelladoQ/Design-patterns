@@ -6,18 +6,20 @@ const users = [
 ]
 
 const compose = (...fns) => x => fns.reduceRight((y, f) => f(y), x)
+const filter = f = xs => xs.filter(f)
 const head = xs => xs[0]
 const formateo = x => ({
     nombreCompleto: `${x.nombre} ${x.apellido}`,
     edad: x.edad,
 })
-
 const string = x => `${x.nombreCompleto} tiene ${x.edad} year()`
+
+// all this functions above should be place in another file for good practice
 
 const traePrimerInfante = compose(
     string,
     formateo,
     head,
-    xs => xs.filter(x => x.edad < 2),
+    filter(x => x.edad < 2),
 )
     
