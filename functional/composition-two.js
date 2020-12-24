@@ -11,8 +11,7 @@ const formateo = x => ({
     edad: x.edad,
 })
 
-const traePrimerInfante = data => {
-    const primerInfante = formateo(head(data.filter(x => x.edad < 2)))
+const string = x => `${x.nombreCompleto} tiene ${x.edad} year()`
 
-    return `${infante.nombreCompleto} tiene ${infante.edad} year()`
-}
+const traePrimerInfante = data => 
+    string(formateo(head(data.filter(x => x.edad < 2))))
