@@ -5,9 +5,10 @@ const users = [
     { edad: 1, nombre: 'Sofia', apellido: 'Zapata' }
 ]
 
+const head = xs => xs[0]
+
 const traePrimerInfante = data => {
-    const infantes = data.filter(x => x.edad < 2)
-    const primerInfante = infantes[0]
+    const primerInfante = head(data.filter(x => x.edad < 2))
     const infante = {
         nombreCompleto: `${primerInfante.nombre} ${primerInfante.apellido}`,
         edad: primerInfante.edad,
