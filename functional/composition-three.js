@@ -5,6 +5,7 @@ const users = [
     { edad: 1, nombre: 'Sofia', apellido: 'Zapata' }
 ]
 
+const compose = (...fns) => x => fns.reduceRight((y, f) => f(y), x)
 const head = xs => xs[0]
 const formateo = x => ({
     nombreCompleto: `${x.nombre} ${x.apellido}`,
@@ -13,5 +14,10 @@ const formateo = x => ({
 
 const string = x => `${x.nombreCompleto} tiene ${x.edad} year()`
 
-const traePrimerInfante = data => 
-    string(formateo(head(data.filter(x => x.edad < 2))))
+const traePrimerInfante = compose(
+    string,
+    formateo,
+    head,
+    xs => xs.filter(x => x.edad < 2),
+)
+    
