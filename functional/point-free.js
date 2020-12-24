@@ -3,10 +3,8 @@ const f = (ruta, cb) => {
     cb(resultado)
 }
 
-f(('/users', resultado) => {
 
-})
-
-app.get('/users', (req, res) => {
-
-})
+const manejaResultado = (resultado) => {
+    
+}
+f(('/users', manejaResultado)
