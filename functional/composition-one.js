@@ -13,5 +13,5 @@ const traePrimerInfante = data => {
         edad: primerInfante.edad,
     }
 
-    return `${infante.nombreCompleto} tiene ${infante.edad}`
+    return `${infante.nombreCompleto} tiene ${infante.edad} year()`
 }
