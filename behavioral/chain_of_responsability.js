@@ -17,4 +17,4 @@ console.log( valor
     .suma(2)
     .suma(3)
     .suma(4).val
-)
+) 
